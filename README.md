@@ -1,0 +1,2 @@
+# Schoolfront
+Example School Page
