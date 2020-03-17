@@ -1,10 +1,8 @@
-sudo: required
 language: node_js
 
-cache:
-  yarn: true
-  directories:
-    - node_modules
+branches:
+  only:
+    - master
 
 install:
   - yarn
@@ -19,16 +17,17 @@ jobs:
     - stage: lint
       script:
         - yarn lint
+      name: "NodeJS 10 lint"
       node_js: "10"
 
-    - stage: test
+    - stage: unit
       script:
         - yarn test:unit
-        - yarn test:e2e
       name: "NodeJS 10 tests"
       node_js: "10"
 
     - stage: build
       script:
         - yarn build
+      name: "NodeJS 10 build"
       node_js: "10"
