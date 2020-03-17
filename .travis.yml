@@ -1,0 +1,34 @@
+sudo: required
+language: node_js
+
+cache:
+  yarn: true
+  directories:
+    - node_modules
+
+install:
+  - yarn
+
+stages:
+  - lint
+  - test
+  - build
+
+jobs:
+  include:
+    - stage: lint
+      script:
+        - yarn lint
+      node_js: "10"
+
+    - stage: test
+      script:
+        - yarn test:unit
+        - yarn test:e2e
+      name: "NodeJS 10 tests"
+      node_js: "10"
+
+    - stage: build
+      script:
+        - yarn build
+      node_js: "10"
