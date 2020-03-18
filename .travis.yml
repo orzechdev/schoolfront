@@ -1,0 +1,33 @@
+language: node_js
+
+branches:
+  only:
+    - master
+
+install:
+  - yarn
+
+stages:
+  - lint
+  - test
+  - build
+
+jobs:
+  include:
+    - stage: lint
+      script:
+        - yarn lint
+      name: "NodeJS 10 lint"
+      node_js: "10"
+
+    - stage: unit
+      script:
+        - yarn test:unit
+      name: "NodeJS 10 tests"
+      node_js: "10"
+
+    - stage: build
+      script:
+        - yarn build
+      name: "NodeJS 10 build"
+      node_js: "10"
