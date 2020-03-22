@@ -8,21 +8,14 @@ install:
   - yarn
 
 stages:
-  - lint
   - test
   - build
 
 jobs:
   include:
-    - stage: lint
+    - stage: test
       script:
-        - yarn lint
-      name: "NodeJS 10 lint"
-      node_js: "10"
-
-    - stage: unit
-      script:
-        - yarn test:unit
+        - yarn test
       name: "NodeJS 10 tests"
       node_js: "10"
 

@@ -1,2 +1,3 @@
 # Schoolfront
+
 Example School Page
