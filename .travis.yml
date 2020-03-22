@@ -8,17 +8,10 @@ install:
   - yarn
 
 stages:
-  - test
   - build
 
 jobs:
   include:
-    - stage: test
-      script:
-        - yarn test
-      name: "NodeJS 10 tests"
-      node_js: "10"
-
     - stage: build
       script:
         - yarn build
