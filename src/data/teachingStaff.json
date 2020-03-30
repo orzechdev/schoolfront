@@ -1,0 +1,42 @@
+[
+  {
+    "firstName": "David",
+    "lastName": "Smith",
+    "studyField": "School management",
+    "biography": "Head of School. Initiator of plenty of activities consisting of improving learning possibilities for students, providing modren technology to the school and many more. Every student and parent is welcome in his room. Any external teaching or work initiative is seriously considered by him. There is no any reported school problem, which could be left alone by him.",
+    "linkedinUrl": "",
+    "facbookUrl": ""
+  },
+  {
+    "firstName": "John",
+    "lastName": "Steward",
+    "studyField": "Mathematics",
+    "biography": "Incredible math head. Every year he with his best students participate in the most prestigious international math contests.",
+    "linkedinUrl": "",
+    "facbookUrl": ""
+  },
+  {
+    "firstName": "Adam",
+    "lastName": "Gatsby",
+    "studyField": "Computer Science",
+    "biography": "Computer Science specialist. After his classes, every student is able to explain computational complexity of the most complex data structures and algorithms. Also, every student after his classes know how to create at least simple program or application like web application, using only the most modern technology.",
+    "linkedinUrl": "",
+    "facbookUrl": ""
+  },
+  {
+    "firstName": "Kati",
+    "lastName": "Williams",
+    "studyField": "Problems and well-being at school",
+    "biography": "Psychologist. She conducts regular classes for students, which have greatly contributed to solving many of their learning problems. Also, the initiator of many activities aimed at combating violence and intolerance at school",
+    "linkedinUrl": "",
+    "facbookUrl": ""
+  },
+  {
+    "firstName": "Stefany",
+    "lastName": "Johnson",
+    "studyField": "English Language",
+    "biography": "Knows every detail of English language. Wrote plenty of novels, being the bestsellers every last consecutive year.",
+    "linkedinUrl": "",
+    "facbookUrl": ""
+  }
+]
