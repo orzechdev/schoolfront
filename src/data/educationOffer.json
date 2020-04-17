@@ -1,0 +1,14 @@
+[
+  {
+    "studyField": "IT technical college",
+    "summary": "This field will gives you advanced knowledge about Computer Science and prapare you for work as a software developer. You will understand computer data structures, algorithms, programming techniques and approaches, artificial intelligence and machine learning applications with IT projects management."
+  },
+  {
+    "studyField": "Logistics college",
+    "summary": "On this collage you will gain extended knowledge about the whole organization of logistics and transport. You will understand the organization and monitoring of the flow of resources and information in production, distribution and storage processes as well as the management of technical means during the implementation of transport processes."
+  },
+  {
+    "studyField": "Tourist service collage",
+    "summary": "Tourist service studies will give you an access to important ascpects of tourist help and attendance. You will understand how to conduct tourist information and sale of tourist services, as well as plan and implement tourist events and services."
+  }
+]
