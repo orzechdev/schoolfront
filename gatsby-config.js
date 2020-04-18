@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby School Webpage Starter`,
+    title: `Example School`,
     description: `Kick off your next, great Gatsby school webpage project with this starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
     author: `@orzechdev`,
   },

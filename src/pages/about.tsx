@@ -10,10 +10,6 @@ const AboutPage = () => (
     <SEO title="About" />
     <h1>About us</h1>
     <p>
-      Example School is a blazingly modern school, which helps students to
-      succeed in their high aspiration tasks.
-    </p>
-    <p>
       We are intrested in providing only superior assistance and service for
       maximizing learning results of our students. With this in mind, we are
       continuously investing in the extraordinarily new technology. We believe

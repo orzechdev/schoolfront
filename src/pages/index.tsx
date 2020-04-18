@@ -8,22 +8,44 @@ import SEO from "../components/seo"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new School Webpage.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
+    <div style={{ display: `flex` }}>
+      <div style={{ width: `55%` }}>
+        <h1>Choose school you want to learn in</h1>
+        <p>
+          Example school is blazingly modern school, which helps students to
+          succeed in their high aspiration tasks. Have you encountered any
+          school problem? Don't worry, we are going to help you in everything.
+        </p>
+        <p>
+          <Link to="/about/">Learn more</Link>
+        </p>
+      </div>
+      <div style={{ width: `45%`, maxWidth: `300px`, marginBottom: `1.45rem` }}>
+        <Image />
+      </div>
     </div>
-    <h2>Check out</h2>
+    <h2>Overview</h2>
     <ul>
       <li>
-        <Link to="/teaching-staff/">Teaching staff</Link>
+        <Link to="/news/">News</Link>
       </li>
       <li>
         <Link to="/education-offer/">Education offer</Link>
       </li>
       <li>
-        <Link to="/page-2/">Go to page 2</Link>
+        <Link to="/teaching-staff/">Teaching staff</Link>
+      </li>
+    </ul>
+    <h2>More</h2>
+    <ul>
+      <li>
+        <Link to="/general-information/">General information</Link>
+      </li>
+      <li>
+        <Link to="/open-hours/">Open hours</Link>
+      </li>
+      <li>
+        <Link to="/contact/">Contact</Link>
       </li>
     </ul>
   </Layout>
