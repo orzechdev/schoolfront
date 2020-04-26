@@ -1,0 +1,64 @@
+[
+  {
+    "weekDay": "0",
+    "open24Hours": false
+  },
+  {
+    "weekDay": "1",
+    "open24Hours": false,
+    "openHours": [
+      {
+        "openTime": "07:00",
+        "closeTime": "15:00"
+      },
+      {
+        "openTime": "16:00",
+        "closeTime": "18:00"
+      }
+    ]
+  },
+  {
+    "weekDay": "2",
+    "open24Hours": false,
+    "openHours": [
+      {
+        "openTime": "07:00",
+        "closeTime": "15:00"
+      }
+    ]
+  },
+  {
+    "weekDay": "3",
+    "open24Hours": false,
+    "openHours": [
+      {
+        "openTime": "07:00",
+        "closeTime": "15:00"
+      }
+    ]
+  },
+  {
+    "weekDay": "4",
+    "open24Hours": false,
+    "openHours": [
+      {
+        "openTime": "07:00",
+        "closeTime": "15:00"
+      }
+    ]
+  },
+  {
+    "weekDay": "5",
+    "open24Hours": false,
+    "openHours": [
+      {
+        "openTime": "07:00",
+        "closeTime": "15:00"
+      }
+    ]
+  },
+  {
+    "weekDay": "6",
+    "open24Hours": false
+  }
+]
