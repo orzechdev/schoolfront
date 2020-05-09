@@ -30,7 +30,7 @@ const OpenHoursPage = () => {
       return "Closed"
     } else {
       return node.openHours.map((hour, hourIdx) => (
-        <span>
+        <span key={hourIdx}>
           {hourIdx > 0 && ", "}
           {hour.openTime}-{hour.closeTime}
         </span>
