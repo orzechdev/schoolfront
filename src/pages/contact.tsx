@@ -5,8 +5,8 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 const ContactPage = () => {
-  const contactRecipients = useStaticQuery(graphql`
-    query ContactRecipientsQuery {
+  const contactQuery = useStaticQuery(graphql`
+    query ContactQuery {
       allContactRecipientsJson {
         edges {
           node {
@@ -15,8 +15,29 @@ const ContactPage = () => {
           }
         }
       }
+      allContactOptionsJson {
+        edges {
+          node {
+            name
+            value
+            valueUrl
+          }
+        }
+      }
     }
   `)
+
+  const getOptionValue = ({ value, valueUrl }) => {
+    if (valueUrl) {
+      return (
+        <a href={valueUrl} target="_blanck">
+          {value}
+        </a>
+      )
+    } else {
+      return value
+    }
+  }
 
   return (
     <Layout>
@@ -26,6 +47,15 @@ const ContactPage = () => {
         Do you have any questions? Or have you encountered school problem? Feel
         free to contact with us, no matter what would you like to ask.
       </p>
+      <div>
+        {contactQuery.allContactOptionsJson.edges.map(
+          ({ node }, index: number) => (
+            <p key={index}>
+              {node.name}: {getOptionValue(node)}
+            </p>
+          )
+        )}
+      </div>
       <form
         method="post"
         action="#"
@@ -42,7 +72,7 @@ const ContactPage = () => {
         <label>
           Recipient*
           <select name="recipient" required style={{ width: `100%` }}>
-            {contactRecipients.allContactRecipientsJson.edges.map(
+            {contactQuery.allContactRecipientsJson.edges.map(
               ({ node }, index: number) => (
                 <option key={index} value={node.email}>
                   {node.name}

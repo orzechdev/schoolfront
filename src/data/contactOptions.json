@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Email",
+    "value": "school@example.com",
+    "valueUrl": "mailto:school@example.com"
+  },
+  {
+    "name": "Phone",
+    "value": "+48 200 000 000",
+    "valueUrl": "tel:+48200000000"
+  },
+  {
+    "name": "Facebook",
+    "value": "fb/exampleschool",
+    "valueUrl": "https://facebook.com/exampleschool"
+  }
+]
