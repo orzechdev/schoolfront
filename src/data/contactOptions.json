@@ -5,7 +5,17 @@
     "valueUrl": "mailto:school@example.com"
   },
   {
+    "name": "GPG public key",
+    "value": "download",
+    "valueUrl": "#"
+  },
+  {
     "name": "Phone",
+    "value": "+48 200 000 000",
+    "valueUrl": "tel:+48200000000"
+  },
+  {
+    "name": "Fax",
     "value": "+48 200 000 000",
     "valueUrl": "tel:+48200000000"
   },
@@ -13,5 +23,25 @@
     "name": "Facebook",
     "value": "fb/exampleschool",
     "valueUrl": "https://facebook.com/exampleschool"
+  },
+  {
+    "name": "WhatsApp",
+    "value": "wa.me/48200000000",
+    "valueUrl": "https://wa.me/48722444000"
+  },
+  {
+    "name": "Skype",
+    "value": "exampleschool",
+    "valueUrl": "skype:exampleschool"
+  },
+  {
+    "name": "Signal",
+    "value": "+48 200 000 000",
+    "valueUrl": "tel:+48200000000"
+  },
+  {
+    "name": "Address",
+    "value": "1620 J.Korwin Ave, Jackowo, TX 42000-1996",
+    "valueUrl": "https://www.google.com/maps/place/Avondale,+Chicago,+IL,+USA/@41.9393979,-87.7164201,2978m"
   }
 ]

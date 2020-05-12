@@ -39,9 +39,6 @@ const IndexPage = () => (
     <h2>More</h2>
     <ul>
       <li>
-        <Link to="/general-information/">General information</Link>
-      </li>
-      <li>
         <Link to="/open-hours/">Open hours</Link>
       </li>
       <li>

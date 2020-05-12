@@ -1,6 +1,6 @@
 <h1 align="center">:mortar_board: Schoolfront</h1>
 
-Schoolfront is an open source frontend build as a Gatsby starter, which you may use to create blazingly fast next generation school webpage. This starter ships with the common features available on school websites, easy to configure with Gatsby configuration files. Learn more about the [Gatsby static site generator](https://www.gatsbyjs.org/) to find out why schoolfront is the next generation of school websites.
+Schoolfront is an open source frontend built as a Gatsby starter, which you may use to create blazingly fast next generation school webpage. This starter ships with the common features available on school websites, easy to configure with Gatsby configuration files. Learn more about the [Gatsby static site generator](https://www.gatsbyjs.org/) to find out why schoolfront is the next generation of school websites.
 
 ## :mag_right: Demo
 
@@ -11,7 +11,7 @@ See [the public demo](https://schoolfront.netlify.app/) of Schoolfront!
 - [x] Main page
 - [x] News from Wordpress
 - [x] Contact page
-- [ ] About page with official school information
+- [x] About page
 - [x] Open hours information
 - [x] Offered curriculum page
 - [x] Teachers list
