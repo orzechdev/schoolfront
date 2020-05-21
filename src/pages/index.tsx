@@ -1,15 +1,30 @@
 import React from "react"
 import { Link } from "gatsby"
+import styled from "styled-components"
 
 import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
 
-const IndexPage = () => (
+const MainSection = styled.section`
+  display: flex;
+`
+
+const MainTextWrapper = styled.div`
+  width: 55%;
+`
+
+const ImageWrapper = styled.div`
+  width: 45%;
+  max-width: 300px;
+  margin-bottom: 1.45rem;
+`
+
+const IndexPage: React.FC = () => (
   <Layout>
     <SEO title="Home" />
-    <section style={{ display: `flex` }}>
-      <div style={{ width: `55%` }}>
+    <MainSection>
+      <MainTextWrapper>
         <h1>Choose school you want to learn in</h1>
         <p>
           Example school is blazingly modern school, which helps students to
@@ -19,11 +34,11 @@ const IndexPage = () => (
         <p>
           <Link to="/about/">Learn more</Link>
         </p>
-      </div>
-      <div style={{ width: `45%`, maxWidth: `300px`, marginBottom: `1.45rem` }}>
+      </MainTextWrapper>
+      <ImageWrapper>
         <Image />
-      </div>
-    </section>
+      </ImageWrapper>
+    </MainSection>
     <section>
       <h2>Overview</h2>
       <ul>

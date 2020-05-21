@@ -1,10 +1,28 @@
 import React from "react"
 import { Link, useStaticQuery, graphql } from "gatsby"
+import styled from "styled-components"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-const ContactPage = () => {
+const Form = styled.form`
+  display: grid;
+  gap: 0.75rem;
+`
+
+const Input = styled.input`
+  width: 100%;
+`
+
+const Select = styled.select`
+  width: 100%;
+`
+
+const TextArea = styled.textarea`
+  width: 100%;
+`
+
+const ContactPage: React.FC = () => {
   const contactQuery = useStaticQuery(graphql`
     query ContactQuery {
       allContactRecipientsJson {
@@ -61,22 +79,18 @@ const ContactPage = () => {
       </section>
       <section>
         <h2>Contact form</h2>
-        <form
-          method="post"
-          action="#"
-          style={{ display: `grid`, gap: `0.75rem` }}
-        >
+        <Form method="post" action="#">
           <label>
             Your name
-            <input name="sender-name" type="text" style={{ width: `100%` }} />
+            <Input name="sender-name" type="text" />
           </label>
           <label>
             Your email
-            <input name="sender-email" type="email" style={{ width: `100%` }} />
+            <Input name="sender-email" type="email" />
           </label>
           <label>
             Recipient*
-            <select name="recipient" required style={{ width: `100%` }}>
+            <Select name="recipient" required>
               {contactQuery.allContactRecipientsJson.edges.map(
                 ({ node }, index: number) => (
                   <option key={index} value={node.email}>
@@ -84,23 +98,18 @@ const ContactPage = () => {
                   </option>
                 )
               )}
-            </select>
+            </Select>
           </label>
           <label>
             Title*
-            <input
-              name="title"
-              type="text"
-              required
-              style={{ width: `100%` }}
-            />
+            <Input name="title" type="text" required />
           </label>
           <label>
             Message*
-            <textarea name="message" required style={{ width: `100%` }} />
+            <TextArea name="message" required />
           </label>
           <button type="submit">Send</button>
-        </form>
+        </Form>
       </section>
       <Link to="/">Go back to the homepage</Link>
     </Layout>

@@ -5,7 +5,7 @@ import * as moment from "moment"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-const OpenHoursPage = () => {
+const OpenHoursPage: React.FC = () => {
   const openHours = useStaticQuery(graphql`
     query OpenHoursQuery {
       allOpenHoursJson {

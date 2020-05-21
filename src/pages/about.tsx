@@ -1,11 +1,17 @@
 import React from "react"
 import { Link } from "gatsby"
+import styled from "styled-components"
 
 import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
 
-const AboutPage = () => (
+const ImageWrapper = styled.div`
+  max-width: 300px;
+  margin-bottom: 1.45rem;
+`
+
+const AboutPage: React.FC = () => (
   <Layout>
     <SEO title="About" />
     <h1>About us</h1>
@@ -15,9 +21,9 @@ const AboutPage = () => (
       continuously investing in the extraordinarily new technology. We believe
       that one day it will pay off us very well.
     </p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
+    <ImageWrapper>
       <Image />
-    </div>
+    </ImageWrapper>
     <Link to="/">Go back to the homepage</Link>
   </Layout>
 )

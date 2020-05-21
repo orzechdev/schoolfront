@@ -4,7 +4,7 @@ import { Link, useStaticQuery, graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-const EducationOfferPage = () => {
+const EducationOfferPage: React.FC = () => {
   const educationOffer = useStaticQuery(graphql`
     query EducationOfferQuery {
       allEducationOfferJson {

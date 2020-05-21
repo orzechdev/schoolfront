@@ -4,7 +4,7 @@ import { Link, useStaticQuery, graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-const NewsPage = () => {
+const NewsPage: React.FC = () => {
   const news = useStaticQuery(graphql`
     query NewsQuery {
       allWordpressPost {
