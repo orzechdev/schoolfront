@@ -15,11 +15,19 @@ See [the public demo](https://schoolfront.netlify.app/) of Schoolfront!
 - [x] Open hours information
 - [x] Offered curriculum page
 - [x] Teachers list
-- [ ] WCAG AA support
+- [x] WCAG AA support
 
 ## :rocket::rocket: Features from 2 milestone (TBA)
 
 TBA
+
+## :hammer: Used technology
+
+- [Gatsby](https://www.gatsbyjs.org/)
+- [React](https://reactjs.org/)
+- [Typescript](https://www.typescriptlang.org/)
+- [GraphQL](https://graphql.org/)
+- [Styled Components](https://styled-components.com/)
 
 ## :airplane: Quick start
 
